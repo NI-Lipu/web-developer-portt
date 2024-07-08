@@ -6,7 +6,10 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-}
+
+    * {
+      margin:0px;
+  }
 
 /* shared style */
 .text-primary{
@@ -51,12 +54,20 @@
 /* header */
 
 .header{
-  background-image: url("../images/developer.png"), url("../images/header_bg.png");
-  background-repeat: no-repeat;
-  background-position: top left,bottom right;
+  background-image: url("../images/developer.png"),url("../images/header_bg.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: 20px 20px, bottom right;
+  background-size: 90px auto, auto;
   background-color: #FFF8F3;
   margin: 0;
 }
+
+/* .header{
+  background-image: url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: auto;
+} */
 
 
 /* Nav styles */
