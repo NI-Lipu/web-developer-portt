@@ -46,6 +46,7 @@
 .section-description{
   font-size: 18px;
   font-weight: 400;
+  text-align: justify;
 }
 .text-center{
   text-align: center;
@@ -62,12 +63,6 @@
   margin: 0;
 }
 
-/* .header{
-  background-image: url("../images/developer.png");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: auto;
-} */
 
 
 /* Nav styles */
@@ -257,4 +252,29 @@ footer input[type="text"], footer input[type="email"], footer textarea{
   font-size: 16px;
   margin-bottom: 24px;
   border: none;
+}
+/* Responsive Media Quere */
+
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+  .skills-container, 
+  .resume-container, 
+  footer,
+  .about-items{
+    flex-direction: column;
+  }
+  
+  footer, .about{
+    padding: 0px;
+  }
+  .footer-colum{
+    width: 100%;
+  }
+  footer input[type="text"], footer input[type="email"], footer textarea{
+    width: calc(100% - 40px);
+    padding: 0;
+  }
 }
